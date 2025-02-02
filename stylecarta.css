@@ -37,17 +37,17 @@ body{
 }
 .container > .envelope-wrapper > .envelope{
     position: relative;
-    width: 500px;
-    height: 330px;
+    width: 300px;
+    height: 230px;
     display: flex;
 }
 .container > .envelope-wrapper > .envelope::before{
     content: '';
     position: absolute;
     z-index: 2;
-    border-top: 230px solid #fe3334;
-    border-right: 250px solid transparent;
-    border-left: 250px solid transparent;
+    border-top: 130px solid #fe3334;
+    border-right: 150px solid transparent;
+    border-left: 150px solid transparent;
     top: 0;
     transform-origin: top;
     transition: all 0.5s ease-in-out 0.7s;
@@ -56,19 +56,19 @@ body{
     content: '';
     position: absolute;
     z-index: 3;
-    border-top: 230px solid transparent;
-    border-left: 250px  solid  #ff989e;
-    border-right: 250px solid  #ff989e;
+    border-top: 130px solid transparent;
+    border-left: 150px  solid  #ff989e;
+    border-right: 150px solid  #ff989e;
     border-bottom: 100px solid #ff858a;
     bottom: 0;
 }
 .letter{
     position: absolute;
     z-index: 1;
-    right: 25%;
+    right: 20%;
     bottom: 0;
-    width: 60%;
-    height: 81%;
+    width: 50%;
+    height: 50%;
     background: #f8f3dd;
     transition: all 1s ease-in-out;
     padding: 30px 20px;
@@ -80,20 +80,12 @@ body{
     color: #444;
     text-align: left;
 }
-.letter > .text > .fecha{
-    text-align: right;
-    font-size: 6px;
-}
-.letter > .text > .texto{
-    font-size: 7px;
-    font-family:'Times New Roman', Times, serif
-}
 .heart{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
-    width: 40px;
-    height: 40px;
+    width: 15px;
+    height: 15px;
     z-index: 4;
     transform: translate(-50%, -20%) rotate(45deg);
     transition: transform 0.5s ease-in-out 1s;
@@ -105,17 +97,17 @@ body{
 .heart::after{
     content: '';
     position: absolute;
-    height: 40px;
-    width: 40px;
+    height: 15px;
+    width: 15px;
     background-color: darkred;
     border-radius: 50%;
     
 }
 .heart::before{
-    top: -24px;
+    top: -7.5px;
 }
 .heart::after{
-    right: 24px;
+    right: 7.5px;
 }
 .flap > .envelope::before{
     z-index: 3;
@@ -124,16 +116,13 @@ body{
 .flap > .envelope .letter{
     z-index: 4;
     bottom: 100px;
-    transform: scale(2);
-    width: 80%;
-    height: 100%;
+    transform: scale(1.5);
     transition-delay: 1s;
     
 }
 
-
 .flap > .heart{
     transform: rotate(90deg);
-    transform: translateX(-300px);
+    
     transition-delay: 0.1s;
 }
